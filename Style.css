@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    
+  }
+  #home {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .content {
+    padding: 20px;
+  }
+  #contact-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: #FF9209;
+    color: #fff;
+    border-radius: 5px;
+  }
+
+  #photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+  #profile-photo {
+    max-width: 50%;
+    height: auto;
+    border-radius: 50%;
+    /* border-radius: 50%; */
+  }
+  
+  /* Navigation Bar Styles */
+  nav {
+    display:flex;
+    justify-content:right;
+    background-color: rgba(255, 255, 255, 0.4);
+  
+    border-radius:  0 0 40% 40%;
+
+    color:#FF9209;
+    padding: 10px;
+    text-align: center;
+    width: 99%;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #FF9209;
+    font-weight: bold;
+  }
+  
+  /* Welcome Section Styles */
+  .welcome-section {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 80px 20px;
+  }
+  
+  .welcome-section h1 {
+    color:#FF9209;
+    font-size: 2em;
+    opacity: 0.6;
+   
+  }
+  p{
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    opacity: 0.6;
+  }
+  #about {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  /* About Section Styles */
+  .about-section {
+    background-color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .about-section h2 {
+    color: #333;
+    font-size: 1.5em;
+    
+  }
+  #skill{
+display: flex;
+padding: 20px;
+justify-content: center;
+align-items: center;
+  }
+  progress {
+    width: 500px; /* Set a specific width */
+    height: 25px; /* Set a specific height */
+    border: none; /* Remove default border */
+    background-color: #FF9209; /* Set background color */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    margin-bottom: 5px; /* Add some spacing */
+    
+  }
+
+  /* Style the value (fill) of the progress element */
+  progress::-webkit-progress-value {
+    background-color:#FF9209; /* Set fill color for WebKit browsers (Chrome, Safari) */
+    border-radius: 10px; /* Match the border radius of the progress element */
+  }
+
+  /* Style the container of the progress element */
+  progress::-webkit-progress-bar {
+    background-color: #f0f0f0; /* Set background color for WebKit browsers (Chrome, Safari) */
+    border-radius: 10px; /* Match the border radius of the progress element */
+  }
+ .progress-container{
+    display: flex;
+    margin: 1px;
+    flex-direction: column;
+ }
+ h1{
+    color:#FF9209;
+    font-size: 2em;
+    opacity: 1;
+ }
+ /* Portfolio Section Styles */
+ .portfolio-section {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .portfolio-section h2 {
+    color: #333;
+    font-size: 1.5em;
+  }
+  
+  .project {
+    margin-bottom: 30px;
+  }
+  
+  .project img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  .content-por{
+    display: flex;
+  }
+   /* Contact Section Styles */
+   .contact-section {
+    background-color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .contact-section h2 {
+    color: #333;
+    font-size: 1.5em;
+  }
+  
+  .contact-details {
+    margin-top: 20px;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+h2,h3,h4,h5{
+  color: #FF9209;
+}
+
+
