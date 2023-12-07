@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
     background-color: black;
     background-size: cover;
     background-position: center;
@@ -9,11 +8,9 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #fff;
-    
+  
   }
   #home {
-    
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -22,9 +19,18 @@ body {
 
   .content {
     padding: 20px;
+    text-align: justify;    
   }
   #contact-btn {
     display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: #FF9209;
+    color: #fff;
+    border-radius: 5px;
+  }
+  .submit{
     padding: 10px 20px;
     margin-top: 10px;
     text-decoration: none;
@@ -37,28 +43,50 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-   
   }
 
   #profile-photo {
     max-width: 50%;
     height: auto;
     border-radius: 50%;
-    /* border-radius: 50%; */
+    
   }
   
   /* Navigation Bar Styles */
   nav {
-    display:flex;
-    justify-content:right;
-    background-color: rgba(255, 255, 255, 0.4);
-  
-    border-radius:  0 0 40% 40%;
+   display: flex;
+  justify-content: right;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 0 0 40% 40%;
+  color: #FF9209;
+  padding: 10px;
+  text-align: center;
+  width: 100%; /* Adjusted width to 100% */
+  position: fixed;
+  top: 0;
+  z-index: 1000; 
+  }
 
-    color:#FF9209;
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  nav ul li a.active {
+    color: black;/* Change this color to your preferred active link color */
+    border-bottom: 2px solid black; /* Change this color to your preferred active link underline color */
+  }
+
+  #scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff; /* Change this to your preferred button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
     padding: 10px;
-    text-align: center;
-    width: 99%;
+    cursor: pointer;
   }
   
   nav ul {
@@ -85,14 +113,14 @@ body {
   
   .welcome-section h1 {
     color:#FF9209;
-    font-size: 2em;
     opacity: 0.6;
    
   }
   p{
     font-size: 18px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    opacity: 0.6;
+   color: #ddd;
+   line-height: 25px;
+    font-weight: 200;
   }
   #about {
     
@@ -155,6 +183,7 @@ align-items: center;
     background-color: #f4f4f4;
     text-align: center;
     padding: 60px 20px;
+    margin-block: 20px;
   }
   
   .portfolio-section h2 {
@@ -175,23 +204,80 @@ align-items: center;
   .content-por{
     display: flex;
   }
-   /* Contact Section Styles */
-   .contact-section {
+
+ 
+  .con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+max-width: 400px;   
+  }
+
+  .contact-section {
     background-color: #fff;
     text-align: center;
-    padding: 60px 20px;
+    padding: 80px 20px;
+    margin-block: 10px;
   }
   
-  .contact-section h2 {
-    color: #333;
-    font-size: 1.5em;
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+    max-width: 95%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content:center;
+margin-inline: 200px;  }
+  
+  .content {
+    padding: 20px; 
   }
   
   .contact-details {
     margin-top: 20px;
   }
   
-  /* Footer Styles */
+ 
+  
+  form {
+    display: grid;
+    gap: 10px;
+    max-width: 500px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  label, input {
+    display: flex;
+    align-items: center;
+  }
+  
+  input,
+  textarea {
+    width: 90%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .submit {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submit:hover {
+    background-color: #45a049;
+  }
+  
+
   footer {
     background-color: #333;
     color: #fff;
@@ -201,8 +287,174 @@ align-items: center;
     bottom: 0;
     width: 100%;
   }
-h2,h3,h4,h5{
+h2,h3,h5{
   color: #FF9209;
 }
+.nav-toggle {
+  display: none;
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    margin-top: 10px;
+  }
+  .nav-toggle {
+    display: block;
+  }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px; /* Adjust this to your header height */
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav ul li {
+    padding: 10px;
+  }
+
+  nav a {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* Navigation Styles for Mobile */
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px; /* Adjust this to your header height */
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav ul li {
+    padding: 10px;
+  }
+
+  nav a {
+    padding: 10px;
+  }
+
+  /* Welcome Section Styles for Mobile */
+  .welcome-section {
+    padding: 60px 20px;
+  }
+
+ 
+
+  #photo {
+    display: none; /* Hide the photo on smaller screens */
+  }
+
+  #scrollToTopBtn {
+    bottom: 60px; /* Adjust this to avoid overlap with the navigation */
+  }
+}
+/* Add these styles at the end of your existing CSS file or create a new one */
+
+/* Dark Mode Styles */
+body.dark-theme {
+  background-color: #1a1a1a;
+  color: #ddd;
+}
+
+/* Mobile Navigation Styles */
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px; /* Adjust this to your header height */
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav ul li {
+    padding: 10px;
+  }
+
+  nav a {
+    padding: 10px;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
+
+/* Additional Styles for Mobile Screens */
+@media screen and (max-width: 768px) {
+  /* Welcome Section Styles for Mobile */
+  .welcome-section {
+    padding: 60px 20px;
+  }
 
 
+
+  #photo {
+    display: none; /* Hide the photo on smaller screens */
+  }
+
+  #scrollToTopBtn {
+    bottom: 60px; /* Adjust this to avoid overlap with the navigation */
+  }
+}
+
+/* Add this at the end for the theme toggle button */
+.theme-toggle {
+  background-color: #FF9209;
+  color: #fff;
+  font-size: 12px;
+  height: 28px;
+  margin-left: auto;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+.theme-toggle:hover {
+  background-color: #FF6F00;
+}
+.social-icons a{
+color: #FF9209;
+font-size: 28px;
+letter-spacing: 5px;
+}

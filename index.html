@@ -4,24 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Name - Portfolio</title>
-  <link rel="stylesheet" href="Style.css"> <!-- Link to your custom styles or include styles directly here -->
+  <link rel="stylesheet" href="Style.css"> 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-KyZXEAg3QhqLMpG8r+Knujsl5+z0CZhd0z9eTTtW8F0p1pjk6ZlF7Pgw91/fp2F0n2F8j5l2G7l3FgR1k8jRmA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Add any additional stylesheets or scripts here -->
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
 </head>
 <body>
-
-<!-- Navigation Bar -->
 <nav>
+  <button class="nav-toggle" onclick="toggleNav()"><i class="fa fa-bars" aria-hidden="true"></i></button>
   <ul>
+  
     <li><a href="#about">About</a></li>
     <li><a href="#portfolio">Portfolio</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
+  <button class="theme-toggle" onclick="toggleTheme()">Dark</button>
+
 </nav>
 
-<!-- Welcome Section -->
 <section id="home" class="welcome-section">
     <div class="content">
       <h1>Hello, I'm Dagem Teshome</h1>
@@ -37,31 +42,15 @@
       <img src="https://plus.unsplash.com/premium_photo-1678565869434-c81195861939?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dagem Teshome" id="profile-photo">
     </div>
   </section>
-
-<!-- About Section -->
-
-
 <section id="about" class="about-section">
-    <div class="content">
-       
-    </div>
-  
-    <div id="detail">
-     
-</div>
-
-
 <div class="content-skill">
     <h1>My Skills</h1>
 <p>I believe in the fact that learning never stops and I am interested in learning new technologies and programming languages that will help me design and develop a better output in less time.
 </p>
-
 </div>
 <div id="skill">
-   
-    
     <div id="">
-        <!-- Progress -->
+      
         <div class="progress-container">
             <p class="progress-label">HTML/CSS/JS</p>
             <progress value="100" max="100"></progress>
@@ -89,8 +78,6 @@
         <div class="progress-container">
             <p class="progress-label">Photoshop</p>
             <progress value="90" max="100"></progress>
-           
-            
         </div>
         
       </div>
@@ -98,59 +85,147 @@
 
   </section>
 
-<!-- Portfolio Section -->
 <section id="portfolio" class="portfolio-section">
     <h2>Portfolio</h2>
     <div class="content-por">
      
-      <!-- Include your project showcases, images, or links here -->
       <div class="project">
         <img src="image/Capture-1.png" alt="Project 1" width="400" height="200">
-        <p>Project Description</p>
-      </div>
+     </div>
       <div class="project">
         <img src="image/image1-2.png" alt="Project 2"  width="400" height="200">
-        <p>Project Description</p>
       </div>
       <div class="project">
         <img src="image/one.png" alt="Project 2"  width="400" height="200">
-        <p>Project Description</p>
       </div>
       <div class="project">
         <img src="image/image45-2.png" alt="Project 2"  width="400" height="200">
-        <p>Project Description</p>
       </div>
-      <!-- Add more projects as needed -->
+     
     </div>
   </section>
   
-<!-- Contact Section -->
-<section id="contact" class="contact-section">
-  <div class="content">
-    <h2>Contact Me</h2>
-    <p>Feel free to reach out to me. I'm available for collaborations, freelance work, and any exciting opportunities.</p>
-    <!-- Include a contact form or contact details -->
-    <div class="contact-details">
-      <h3>Email: tdaguti@gmail.com</h3>
-      <h4>Phone: +251933907735</h4>
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/dagem-teshome-007a4920a" target="_blank"><i class="fa fa-linkedin"></i></a>
-        <a href="https://www.linkedin.com/in/dagem-teshome-007a4920a" target="_blank"><i class="fa fa-twitter"></i></a>
-        <a href="https://www.facebook.com/dagem.regassa" target="_blank"><i class="fa fa-facebook"></i></a>
-        <a href="https://www.facebook.com/dagem.regassa" target="_blank"><i class="fa fa-instagram"></i></a>
-        <a href="https://github.com/dagopia" target="_blank"><i class="fa fa-github"></i></a>
+  <section id="contact" class="contact-section">
+    <div class="grid-container">
+      <div class="content">
+        <h1>Contact Me</h1>
+        <h4>Feel free to reach out to me. I'm available for collaborations, freelance work, and any exciting opportunities.</h4>
+
+        <div class="contact-details">
+          <h3>Email: tdaguti@gmail.com</h3>
+          <h4>Phone: +251933907735</h4>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/dagem-teshome-007a4920a" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/dagem-teshome-007a4920a" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.facebook.com/dagem.regassa" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.facebook.com/dagem.regassa" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://github.com/dagopia" target="_blank"><i class="fa fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="conForm">
+        <form name="contactForm" onsubmit="return validateForm()" class="con">
+          
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required >
+  
+      
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+  
         
-    
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+  
+          <input type="submit" value="Submit" class="submit">
+        </form>
       </div>
     </div>
-  </div>
-</section>
-<!-- Footer -->
+  </section>
+  
 <footer>
-  <h4>&copy; 2023 Your Name. All rights reserved.</h4>
- 
-</footer
- 
+  <h4>&copy; 2023 Dagem Teshome. All rights reserved.</h4>
+</footer>
+<button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">Top</button>
 
+<script>
+  function handleIntersection(entries, observer) {
+    entries.forEach((entry) => {
+      const id = entry.target.id;
+      const navLink = document.querySelector(`nav a[href="#${id}"]`);
+      
+      if (entry.isIntersecting) {
+        navLink.classList.add('active');
+      } else {
+        navLink.classList.remove('active');
+      }
+    });
+  }
+
+  const observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
+
+  const sections = document.querySelectorAll('section');
+
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
+  function scrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  
+  window.onscroll = function () {
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+  
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      scrollToTopBtn.style.display = "block";
+    } else {
+      scrollToTopBtn.style.display = "none";
+    }
+  };
+  function toggleNav() {
+    const navUl = document.querySelector("nav ul");
+    navUl.classList.toggle("show");
+  }
+  function toggleTheme(theme) {
+  const body = document.body;
+  const availableThemes = ['dark-theme', 'light-theme', 'custom-theme'];
+
+  
+  if (theme && availableThemes.includes(theme)) {
+    body.className = theme;
+  } else {
+   
+    const currentThemeIndex = availableThemes.findIndex(t => body.classList.contains(t));
+    const nextThemeIndex = (currentThemeIndex + 1) % availableThemes.length;
+    body.className = availableThemes[nextThemeIndex];
+  }
+}
+toggleTheme();
+toggleTheme('light-theme');
+    function openModal(modalId) {
+  console.log(`Opening modal: ${modalId}`);
+  document.getElementById(modalId).style.display = "block";
+}
+
+function closeModal(modalId) {
+  console.log(`Closing modal: ${modalId}`);
+  document.getElementById(modalId).style.display = "none";
+}
+
+window.onclick = function (event) {
+  if (event.target.classList.contains('modal')) {
+    console.log("Clicked outside the modal content");
+    event.target.style.display = "none";
+  }
+};
+
+</script>
 </body>
 </html>
+
+
+
+
+
