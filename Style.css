@@ -1,295 +1,51 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    background-size: cover;
-    background-position: center;
-   display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  
-  }
-  #home {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.1);
-  }
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ddd;
+  font-size: 16px;
+  line-height: 1.6;
+}
+/* Add these styles to make the navigation responsive */
 
-  .content {
-    padding: 20px;
-    text-align: justify;    
-  }
-  #contact-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 10px;
-    text-decoration: none;
-    background-color: #FF9209;
-    color: #fff;
-    border-radius: 5px;
-  }
-  .submit{
-    padding: 10px 20px;
-    margin-top: 10px;
-    text-decoration: none;
-    background-color: #FF9209;
-    color: #fff;
-    border-radius: 5px;
-  }
-
-  #photo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #profile-photo {
-    max-width: 50%;
-    height: auto;
-    border-radius: 50%;
-    
-  }
-  
-  /* Navigation Bar Styles */
-  nav {
-   display: flex;
-  justify-content: right;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 0 0 40% 40%;
   color: #FF9209;
   padding: 10px;
   text-align: center;
-  width: 100%; /* Adjusted width to 100% */
+  width: 100%;
   position: fixed;
   top: 0;
-  z-index: 1000; 
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  nav ul li a.active {
-    color: black;/* Change this color to your preferred active link color */
-    border-bottom: 2px solid black; /* Change this color to your preferred active link underline color */
-  }
-
-  #scrollToTopBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #007bff; /* Change this to your preferred button color */
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  nav ul {
-    list-style-type: none;
-  }
-  
-  nav li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #FF9209;
-    font-weight: bold;
-  }
-  
-  /* Welcome Section Styles */
-  .welcome-section {
-    background-color: #f4f4f4;
-    text-align: center;
-    padding: 80px 20px;
-  }
-  
-  .welcome-section h1 {
-    color:#FF9209;
-    opacity: 0.6;
-   
-  }
-  p{
-    font-size: 18px;
-   color: #ddd;
-   line-height: 25px;
-    font-weight: 200;
-  }
-  #about {
-    
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-  /* About Section Styles */
-  .about-section {
-    background-color: #fff;
-    text-align: center;
-    padding: 60px 20px;
-  }
-  
-  .about-section h2 {
-    color: #333;
-    font-size: 1.5em;
-    
-  }
-  #skill{
-display: flex;
-padding: 20px;
-justify-content: center;
-align-items: center;
-  }
-  progress {
-    width: 500px; /* Set a specific width */
-    height: 25px; /* Set a specific height */
-    border: none; /* Remove default border */
-    background-color: #FF9209; /* Set background color */
-    border-radius: 10px; /* Add border-radius for rounded corners */
-    margin-bottom: 5px; /* Add some spacing */
-    
-  }
-
-  /* Style the value (fill) of the progress element */
-  progress::-webkit-progress-value {
-    background-color:#FF9209; /* Set fill color for WebKit browsers (Chrome, Safari) */
-    border-radius: 10px; /* Match the border radius of the progress element */
-  }
-
-  /* Style the container of the progress element */
-  progress::-webkit-progress-bar {
-    background-color: #f0f0f0; /* Set background color for WebKit browsers (Chrome, Safari) */
-    border-radius: 10px; /* Match the border radius of the progress element */
-  }
- .progress-container{
-    display: flex;
-    margin: 1px;
-    flex-direction: column;
- }
- h1{
-    color:#FF9209;
-    font-size: 2em;
-    opacity: 1;
- }
- /* Portfolio Section Styles */
- .portfolio-section {
-    background-color: #f4f4f4;
-    text-align: center;
-    padding: 60px 20px;
-    margin-block: 20px;
-  }
-  
-  .portfolio-section h2 {
-    color: #333;
-    font-size: 1.5em;
-  }
-  
-  .project {
-    margin-bottom: 30px;
-  }
-  
-  .project img {
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  .content-por{
-    display: flex;
-  }
-
- 
-  .con{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-max-width: 400px;   
-  }
-
-  .contact-section {
-    background-color: #fff;
-    text-align: center;
-    padding: 80px 20px;
-    margin-block: 10px;
-  }
-  
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap: 20px; 
-    max-width: 95%;
-    margin: 0 auto;
-    align-items: center;
-    justify-content:center;
-margin-inline: 200px;  }
-  
-  .content {
-    padding: 20px; 
-  }
-  
-  .contact-details {
-    margin-top: 20px;
-  }
-  
- 
-  
-  form {
-    display: grid;
-    gap: 10px;
-    max-width: 500px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  label, input {
-    display: flex;
-    align-items: center;
-  }
-  
-  input,
-  textarea {
-    width: 90%;
-    padding: 8px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .submit {
-    background-color: #4caf50;
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .submit:hover {
-    background-color: #45a049;
-  }
-  
-
-  footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-h2,h3,h5{
-  color: #FF9209;
+  z-index: 1000;
 }
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #FF9209;
+  font-weight: bold;
+}
+
 .nav-toggle {
   display: none;
   font-size: 20px;
@@ -301,21 +57,16 @@ h2,h3,h5{
 @media screen and (max-width: 768px) {
   nav {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    padding: 10px;
   }
 
-  nav ul {
-    margin-top: 10px;
-  }
-  .nav-toggle {
-    display: block;
-  }
   nav ul {
     display: none;
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top: 60px; /* Adjust this to your header height */
+    top: 60px;
     left: 0;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.9);
@@ -328,133 +79,391 @@ h2,h3,h5{
 
   nav ul li {
     padding: 10px;
-  }
-
-  nav a {
-    padding: 10px;
-  }
-}
-@media screen and (max-width: 768px) {
-  /* Navigation Styles for Mobile */
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav ul {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 60px; /* Adjust this to your header height */
-    left: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  }
-
-  nav ul.show {
-    display: flex;
-  }
-
-  nav ul li {
-    padding: 10px;
+    text-align: center;
   }
 
   nav a {
     padding: 10px;
-  }
-
-  /* Welcome Section Styles for Mobile */
-  .welcome-section {
-    padding: 60px 20px;
-  }
-
- 
-
-  #photo {
-    display: none; /* Hide the photo on smaller screens */
-  }
-
-  #scrollToTopBtn {
-    bottom: 60px; /* Adjust this to avoid overlap with the navigation */
-  }
-}
-/* Add these styles at the end of your existing CSS file or create a new one */
-
-/* Dark Mode Styles */
-body.dark-theme {
-  background-color: #1a1a1a;
-  color: #ddd;
-}
-
-/* Mobile Navigation Styles */
-@media screen and (max-width: 768px) {
-  nav ul {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 60px; /* Adjust this to your header height */
-    left: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  }
-
-  nav ul.show {
-    display: flex;
-  }
-
-  nav ul li {
-    padding: 10px;
-  }
-
-  nav a {
-    padding: 10px;
+    text-align: center;
   }
 
   .nav-toggle {
     display: block;
   }
 }
-
-/* Additional Styles for Mobile Screens */
-@media screen and (max-width: 768px) {
-  /* Welcome Section Styles for Mobile */
-  .welcome-section {
-    padding: 60px 20px;
-  }
-
-
-
-  #photo {
-    display: none; /* Hide the photo on smaller screens */
-  }
-
-  #scrollToTopBtn {
-    bottom: 60px; /* Adjust this to avoid overlap with the navigation */
-  }
-}
-
-/* Add this at the end for the theme toggle button */
-.theme-toggle {
-  background-color: #FF9209;
-  color: #fff;
-  font-size: 12px;
-  height: 28px;
-  margin-left: auto;
+#contact-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #4caf50; /* Button background color */
+  color: #fff; /* Button text color */
+  text-decoration: none;
   border-radius: 5px;
-  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact-btn:hover {
+  background-color: #45a049; /* Button background color on hover */
+}
+
+
+.welcome-section {
+ 
+ margin-top: 5%;
+ padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; 
+  width: 90%;
+}
+
+.welcome-section .content {
+  flex: 1;
+  padding: 20px;
+  text-align: justify;
+ 
+  width: 60%;
+}
+
+.welcome-section .photo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  
+
+}
+
+.welcome-section #profile-photo {
+  
+  max-width: 50%;
+  height: auto;
+  border-radius: 50%;
+
+}
+
+h1{
+  color:#FF9209;
+  font-size: 2em;
   
 }
 
-.theme-toggle:hover {
-  background-color: #FF6F00;
+
+p {
+  font-size: 18px;
+  color: #ddd;
+  line-height: 25px;
+  font-weight: 200;
 }
-.social-icons a{
-color: #FF9209;
-font-size: 28px;
-letter-spacing: 5px;
+.par{
+  font-size: 18px;
+  color:black;
+  line-height: 25px;
+  font-weight: 200;
+}
+
+#photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#profile-photo {
+  max-width: 50%; 
+  height: auto;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  
+  .welcome-section {
+    padding: 60px 20px;
+
+  }
+  #photo {
+    display: none;
+
+  }
+  .welcome-section .content {
+      width: 100%;
+    }
+}
+@media (max-width: 767px) {
+  .welcome-section {
+    flex-direction: column-reverse; 
+  }
+
+  .welcome-section .content,
+  .welcome-section .photo {
+    flex: 1;
+    width: 100%;
+  }
+}
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+
+  text-align: center;
+  padding: 20px 5px;
+  width: 90%;
+
+
+}
+
+.about-section .content-skill,
+.about-section #skill {
+  flex: 1;
+  padding: 20px;
+  text-align: justify;
+}
+
+.about-section #skill {
+  max-width: 70%;
+  margin: 0 auto;
+  
+}
+.progress-container {
+  margin-bottom: 20px;
+}
+
+.progress-label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: black;
+}
+
+progress {
+  width: 60%;
+  height: 20px;
+  appearance: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #ddd; /* Progress bar background color */
+}
+
+progress::-webkit-progress-bar {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #FF9209;
+  border-radius: 5px;
+}
+
+progress::-moz-progress-bar {
+  background-color: #4caf50; /* Progress bar color for Firefox */
+  border-radius: 5px;
+}
+
+/* Media query for smaller screens (max-width: 767px) */
+@media (max-width: 767px) {
+  .about-section {
+    flex-direction: column; /* Display content-skill and skill in a single column on smaller screens */
+  }
+
+  .about-section .content-skill,
+  .about-section #skill {
+    flex: 1;
+    width: 100%;
+    padding: 20px;
+    max-width: none;
+  
+  }
+}
+
+
+
+
+.portfolio-section {
+  background-color: #f4f4f4;
+  color: black;
+  text-align: center;
+width: 80%;
+  margin-block: 20px;
+}
+
+.portfolio-section h2 {
+  color: #333;
+  font-size: 1.5em;
+}
+
+.content-por {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  margin: 10px;
+  width: calc(50% - 20px);
+  box-sizing: border-box;
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+ 
+  .portfolio-section {
+    padding: 40px 20px;
+  }
+
+  
+  .project {
+    width: 100%;
+  }
+}
+
+
+.contact-section {
+  background-color: #fff;
+  text-align: center;
+  padding: 20px 20px;
+  margin-block: 10px;
+  width: 100%;
+  color: black;
+  margin-bottom: 60px;
+  
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.content {
+  padding: 20px;
+  max-width: 600px;
+  flex: 1; 
+}
+
+.conForm {
+  max-width: 600px;
+  flex: 1; 
+}
+
+.contact-details {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  font-size: 28px;
+  margin: 0 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto; 
+  
+  margin-top: 15px;
+}
+label {
+  display: block;
+  margin-bottom: 1px;
+  font-weight: bold;
+}
+
+/* Style for text input and textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 2px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Style for submit button */
+.submit {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+.submit:hover {
+  background-color: #45a049;
+}
+
+.social-icons {
+  display: flex;
+  gap: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: #333; 
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #007bff; 
+}
+@media screen and (max-width: 768px) {
+  .contact-section {
+    padding: 40px 20px;
+  }
+
+  form {
+    max-width: 100%;
+  }
+}
+
+/* Add these styles to make the footer and button responsive */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+  #scrollToTopBtn {
+    bottom: 60px;
+  }
 }
