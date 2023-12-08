@@ -288,6 +288,7 @@ progress::-moz-progress-bar {
   text-align: center;
 width: 80%;
   margin-block: 20px;
+  border-radius: 12px;
 }
 
 .portfolio-section h2 {
@@ -332,9 +333,11 @@ width: 80%;
   text-align: center;
   padding: 20px 20px;
   margin-block: 10px;
-  width: 100%;
+  width: 97%;
   color: black;
   margin-bottom: 60px;
+  border-radius: 25px;
+
   
 }
 
